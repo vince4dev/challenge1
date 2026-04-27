@@ -1,0 +1,63 @@
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/outfit-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/outfit-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  /* Colors */
+  --c-slate-900: hsl(218, 44%, 22%);
+  --c-slate-500: hsl(216, 15%, 48%);
+  --c-slate-300: hsl(212, 45%, 89%);
+  --c-blue-600: hsl(216, 95%, 58%);
+  --c-blue-500: hsl(216, 100%, 61%);
+  --c-white: hsl(0, 0%, 100%);
+
+  /* Fonts Size */
+  --fs-15: calc(15 / 16 * 1rem);
+  --fs-22: calc(22 / 16 * 1rem);
+
+  /* Fonts Weigth */
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  background-color: var(--c-slate-300);
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  line-height: 1.2;
+}
